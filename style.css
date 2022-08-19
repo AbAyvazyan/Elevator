@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0 0 0 5vw;
+}
+
+main{
+    height:100vh;
+    width: 60vw;
+    background: red;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.lift{
+    display: grid;
+    grid-template-columns: auto auto;
+    background: yellow;
+    z-index: 5;
+    position: absolute;
+    height: 12.5vh;
+    width: 10vw;
+    margin: auto;
+    left: 30vw;
+    bottom: 0;
+}
+
+.door{
+    background: green;
+}
