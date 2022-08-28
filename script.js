@@ -134,6 +134,8 @@ startMovingButton.addEventListener("click", function ab(){
         return false
     }
 
+    doorClose().then(()=>
+
 
      changeFloor(floorArray.shift()).then(()=> {
          doorOpen().then(()=>{
@@ -145,4 +147,6 @@ startMovingButton.addEventListener("click", function ab(){
              })
          })
      })
+
+    )
 })
